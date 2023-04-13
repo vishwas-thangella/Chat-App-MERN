@@ -9,10 +9,22 @@ const socket = require('socket.io');
 
 const app = express();
 
-app.use(cors({
-    origin:['https://chat-app-mern-client-six.vercel.app'],
-    credentials:true
-}));
+const corsOpts = {
+  origin: '*',
+
+  methods: [
+    'GET',
+    'POST',
+    'Delete',
+    'Put'
+  ],
+
+  allowedHeaders: [
+    'Content-Type',
+  ],
+};
+
+app.use(cors(corsOpts));
 app.use(express.json());
 
 dotenv.config({path:'.env'});
