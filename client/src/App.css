@@ -1,0 +1,93 @@
+.formCont{
+  min-width: 280px;
+  max-width: 340px;
+  height: 90vh;
+  margin: 5px auto;
+}
+.forget:hover{
+  cursor: pointer;
+  color:cornflowerblue;
+}
+.MuiFormHelperText-root {
+  color: red !important;
+}
+.list:hover{
+  cursor: pointer;
+  border:1px solid gainsboro;
+}
+.bottom-inp-con{
+  height: 60px;
+  background-color: aquamarine;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+.btm-inp{
+  height: 60px;
+  position: fixed;
+  background-color: white;
+  z-index: 0;
+  bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:10px;
+  border:1px solid gainsboro;
+}
+.btm-inp > input{
+  width: 90%;
+  outline-color: #1976D2;
+  border:0px solid white;
+}
+.emoji-picker-react{
+  position: absolute;
+  top:-460px;
+  left:0px;
+}
+.sent{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2px;
+}
+.sent > .bxSent > .inner{
+  padding: 8px;
+  background-color: #1976D2;
+  color:white;
+  border-radius: 10px 15px 10px;
+  max-width: 280px;
+}
+
+.recieved{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  padding: 2px;
+}
+
+.recieved > .bxRec > .inner{
+  padding: 8px;
+  background-color: #FFCC33;
+  color:black;
+  border-radius: 10px 15px 10px;
+  max-width: 280px;
+}
+
+.bxSent{
+  display:flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  gap:5px;
+}
+
+.bxRec{
+  display:flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+  gap:5px;
+}
+
