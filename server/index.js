@@ -11,6 +11,7 @@ const app = express();
 
 app.use(cors({
     origin:['https://chat-app-mern-client-six.vercel.app']
+    credentials:true
 }));
 app.use(express.json());
 
