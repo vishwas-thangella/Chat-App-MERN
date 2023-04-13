@@ -11,7 +11,7 @@ const app = express();
 
 app.use(cors({
   origin:'*'
-  ));
+}));
 app.use(express.json());
 
 dotenv.config({path:'.env'});
