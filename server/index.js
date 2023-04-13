@@ -10,7 +10,7 @@ const socket = require('socket.io');
 const app = express();
 
 app.use(cors({
-  origin:'*'
+  origin:'https://chat-app-mern-client-vishwas-thangella.vercel.app'
 }));
 app.use(express.json());
 
@@ -27,7 +27,7 @@ const server = app.listen(process.env.PORT,()=>{
 
 const io = socket(server,{
     cors:{
-        origin:'*'
+        origin:'https://chat-app-mern-client-vishwas-thangella.vercel.app'
     },
     credentials:true,
 });
