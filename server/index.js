@@ -9,22 +9,9 @@ const socket = require('socket.io');
 
 const app = express();
 
-const corsOpts = {
-  origin: '*',
-
-  methods: [
-    'GET',
-    'POST',
-    'Delete',
-    'Put'
-  ],
-
-  allowedHeaders: [
-    'Content-Type',
-  ],
-};
-
-app.use(cors(corsOpts));
+app.use(cors({
+  origin:'*'
+  ));
 app.use(express.json());
 
 dotenv.config({path:'.env'});
