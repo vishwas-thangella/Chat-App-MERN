@@ -31,7 +31,10 @@ const Chat = () =>{
         })
         getMessages();
         // EstablishSocket();
-    },[CurrentUser]);
+    });
+    useEffect(()=>{
+        getMessages();
+     },[messages]);
     useEffect(()=>{
         if(CurrentUser){
             socket.current = io(process.env.host);
