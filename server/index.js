@@ -9,9 +9,11 @@ const socket = require('socket.io');
 
 const app = express();
 
-app.use(cors({
-  origin:'https://chat-app-mern-client-vishwas-thangella.vercel.app'
-}));
+const CorsOption = {
+    origin:"https://chat-app-mern-client-vishwas-thangella.vercel.app"
+}
+
+app.use(cors(CorsOption));
 app.use(express.json());
 
 dotenv.config({path:'.env'});
